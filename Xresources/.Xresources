@@ -2,7 +2,7 @@
 
 ! Fonts
 !URxvt.font: 9x15
-URxvt.font: xft:hack:size=12
+URxvt.font: xft:hack:size=10
 
 URxvt.background: [65]#282A36
 

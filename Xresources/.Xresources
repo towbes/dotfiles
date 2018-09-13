@@ -2,7 +2,13 @@
 
 ! Fonts
 !URxvt.font: 9x15
-URxvt.font: xft:hack:size=10
+URxvt.font: xft:hack:size=8
+
+#Reduce the spacing by one pixel
+URxvt.letterSpace: -1
+
+#Remove the scrollbar
+URxvt.scrollBar: false
 
 URxvt.background: [65]#282A36
 

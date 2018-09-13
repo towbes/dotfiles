@@ -18,6 +18,8 @@
 # This startup script is used only if PulseAudio is started per-user
 # (i.e. not in system mode)
 
+#This configuration is for HOME computer
+
 .fail
 
 ### Automatically restore the volume of streams and devices
@@ -140,3 +142,6 @@ load-module module-filter-apply
 ### Make some devices default
 #set-default-sink output
 #set-default-source input
+
+#Make the Yeti Blue Microphone the default microphone
+#set-default-source alsa_input.usb-BLUE_MICROPHONE_Blue_Snowball_AYM_2018_06_12_83194-00.analog-mono

@@ -2,12 +2,12 @@
 
 ! Fonts
 !URxvt.font: 9x15
-URxvt.font: xft:Iosevka:size=8
+URxvt.font: xft:hack:size=8
 
-!Reduce the spacing by one pixel
-!URxvt.letterSpace: true
+#Reduce the spacing by one pixel
+URxvt.letterSpace: -1
 
-!Remove the scrollbar
+#Remove the scrollbar
 URxvt.scrollBar: false
 
 URxvt.background: [65]#282A36

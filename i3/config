@@ -292,7 +292,7 @@ exec_always --no-startup-id /usr/bin/slack
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xautolock -time 60 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -432,7 +432,7 @@ mode "$mode_gaps_outer" {
 exec_always --no-startup-id "i3-msg 'workspace 3; append_layout /home/towbes/.i3/workspace-3.json'"
 
 #set backgrounds - Portrait Landscape Landscape
-exec_always --no-startup-id feh --bg-scale /home/towbes/Pictures/wallpapers/dark_portrait_rain.jpg /home/towbes/Pictures/wallpapers/makise_dark.jpg /home/towbes/Pictures/wallpapers/dark_landscape.jpg
+exec_always --no-startup-id feh --bg-scale /home/towbes/Pictures/wallpapers/portrait/dark_portrait_rain.jpg /home/towbes/Pictures/wallpapers/landscape/makise_dark.jpg /home/towbes/Pictures/wallpapers/landscape/dark_landscape.jpg
 
 #Start compton for transparent terminals
 exec_always  /usr/bin/compton -b --config /home/towbes/.config/compton.conf

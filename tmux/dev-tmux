@@ -1,5 +1,7 @@
 #!/bin/sh
-tmux new-session -s "base" -d
+NAME=$1
+
+tmux new-session -s $NAME -d
 tmux split-window -h
 tmux split-window -v
 tmux -2 attach-session -d

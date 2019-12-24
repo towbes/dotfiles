@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function reset() {
+    tmux set-option -a status-style bg=green;
+    tmux set-option -a status-style fg=black;
+    tmux set-option -a pane-border-style fg=default;
+    tmux set-option -a pane-active-border-style "bg=default fg=default";
+}
+
+trap reset SIGINT
+
+#update status bar colors
+tmux set-option -a status-style bg=red;
+tmux set-option -a status-style fg=black;
+#update pane-border
+tmux set-option -a pane-border-style fg=red;
+tmux set-option -a pane-active-border-style "bg=magenta fg=red";
+
+tmux pipe-pane -o 'cat >> /Users/ritzbitz/Documents/testing/clients/sshlogs/$(date +%F_%R_%S).log'
+/usr/bin/ssh "$@"
+reset
+tmux pipe-pane \

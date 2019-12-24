@@ -4,6 +4,11 @@ export PATH=$HOME/bin:$HOME/Library:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/ritzbitz/.oh-my-zsh"
 
+#Add the following to fix pipenv UTF-8 issues
+#https://github.com/pypa/pipenv/issues/187
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
